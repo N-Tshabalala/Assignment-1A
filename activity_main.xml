@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Hisbackground"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/generate_history"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="236dp"
+        android:text="@string/clear"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtResult"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/show_results"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClear" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="208dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/ageNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/ageNumber"
+        android:layout_width="62dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/enter_age"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="cursive"
+        android:text="@string/historically_accurate"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
